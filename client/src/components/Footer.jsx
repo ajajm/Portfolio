@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import Socials from './Socials';
 
 const Footer = () => {
   return (
@@ -26,11 +27,7 @@ const Footer = () => {
         </div>
 
         {/* socials */}
-        <div className='flex items-center border-gray-900/5 text-gray-400 text-xm justify-between gap-8'>
-          <a href='https://x.com/not_ajaj/' target='_blank'><FaTwitter /></a>
-          <a href='https://github.com/ajajm/' target='_blank'><FaGithub /></a>
-          <a href='https://www.linkedin.com/in/ajaj-dev/' target='_blank'><FaLinkedin /></a>
-        </div>
+        <Socials />
       </div>
     </footer>
   );

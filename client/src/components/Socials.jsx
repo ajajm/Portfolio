@@ -1,0 +1,14 @@
+import React from 'react'
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
+const Socials = () => {
+  return (
+    <div className='flex items-center  border-gray-900/5 text-zinc-500 text-xm justify-center gap-7'>
+        <a href='https://x.com/not_ajaj/' target='_blank'><FaTwitter /></a>
+        <a href='https://github.com/ajajm/' target='_blank'><FaGithub /></a>
+        <a href='https://www.linkedin.com/in/ajaj-dev/' target='_blank'><FaLinkedin /></a>
+    </div>
+  )
+}
+
+export default Socials
