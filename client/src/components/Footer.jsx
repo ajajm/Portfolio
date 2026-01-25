@@ -5,8 +5,8 @@ import Socials from './Socials';
 
 const Footer = () => {
   return (
-    <footer className='flex relative justify-center bottom-0 items-center border-t mx-auto border-slate-900/5 w-full mt-auto'>
-      <div className='flex flex-col items-center justify-center gap-3 py-10'>
+    <footer className='flex py-10 justify-center  bottom-0 items-center border-t mx-auto border-slate-900/5 w-full mt-auto'>
+      <div className='flex flex-col items-center justify-center py-10 gap-3 '>
         {/* logo name */}
         <Link to='/'>
           <span className='flex items-center font-bold text-x gap-2'>
@@ -20,10 +20,11 @@ const Footer = () => {
         </Link>
 
         {/* about contact discord */}
-        <div className='flex py-2 px-5 rounded-2xl justify-between gap-8 text-white items-center'>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
-          <Link to='https://discord.gg/mr3S7SVjMc' target='_blank'>Discord</Link>
+        <div className='flex py-2 px-5 rounded-2xl justify-between gap-8 text-[#d5d5d5] items-center'>
+          <Link className='hover:hover:text-white ' to='/about'>About</Link>
+          <Link className='hover:hover:text-white ' to='/contact'>Contact</Link>
+          <Link className='hover:hover:text-white ' to='https://discord.gg/mr3S7SVjMc' target='_blank'>Discord</Link>
+
         </div>
 
         {/* socials */}
