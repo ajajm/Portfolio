@@ -1,0 +1,26 @@
+import React from 'react'
+import Socials from '../components/Socials'
+
+const Hero = () => {
+  return (
+    <div className='block relative lg:flex max-w-5xl mx-auto mt-10 md:mt-20 px-8'>
+      <div>
+        <h1 className='mb-8 text-5xl font-extrabold '>Written by someone <br></br>
+          <span class="bg-gradient-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text text-6xl font-extrabold"> who ships.</span>
+        </h1>
+          <p className='font-sans font-normal text-[#9198a1]'>
+            I’m MD Ajaj, a software engineer focused on turning ideas into working systems. I build web applications, automation pipelines, and AI-powered tools without unnecessary complexity.
+          </p>
+          <p className='mt-5 lg:mt-20'>~ Focusing towards career ✨</p>
+      </div>
+      <div className='mt-4 lg:mt-0'>
+        <img 
+          alt="Avatar" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="transition duration-500 mb-4 blur-0 scale-100 rounded-2xl"
+          src="https://res.cloudinary.com/dpoq85fg3/image/upload/v1769256492/pfp_pcua72.jpg" srcSet="public/pfp.jpg" /> 
+        <Socials /> 
+      </div> 
+    </div>
+  )
+}
+
+export default Hero
