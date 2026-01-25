@@ -1,18 +1,32 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tw-animate-css";
+@import "./assets/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css";
 
-@custom-variant dark (&:is(.dark *));
+@layer base{
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #f0f6fc;
+    background-color: #0d1117;
+    font-family: "Inter", sans-serif;
+  }
+}
 
-body {
+
+/* body {
  height: 100%;
  width: 100%;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
- background-color: rgb(38, 27, 27);
-}
+} */
+
+
+@custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
  --radius-sm: calc(var(--radius) - 4px);

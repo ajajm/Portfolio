@@ -20,7 +20,7 @@ const Footer = () => {
         </Link>
 
         {/* about contact discord */}
-        <div className='flex py-2 px-5 rounded-2xl justify-between gap-8 text-[#d5d5d5] items-center'>
+        <div className='flex py-2 px-5 rounded-2xl justify-between gap-8 text-[#9198a1] items-center'>
           <Link className='hover:hover:text-white ' to='/about'>About</Link>
           <Link className='hover:hover:text-white ' to='/contact'>Contact</Link>
           <Link className='hover:hover:text-white ' to='https://discord.gg/mr3S7SVjMc' target='_blank'>Discord</Link>
