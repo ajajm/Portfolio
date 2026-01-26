@@ -39,8 +39,8 @@ const Projects = () => {
 
                     {/* live links */}
                     <span className='flex justify-center text-[#9198a1] items-center mb-auto text-2xl gap-3 '>
-                        <a className='hover:hover:text-[#e469fa] active:scale-85' href="https://github.com/ajajm/Speechflow" target='_blank'><FaGithub className /></a>
-                        <a className='hover:hover:text-[#e469fa] active:scale-85' href="https://speechflow.me/" target="_blank"><LuSquareArrowOutUpRight /></a>
+                        <a className='hover:text-[#f0f6fc] active:scale-85' href="https://github.com/ajajm/Speechflow" target='_blank'><FaGithub className /></a>
+                        <a className='hover:text-[#f0f6fc] active:scale-85' href="https://speechflow.me/" target="_blank"><LuSquareArrowOutUpRight /></a>
                     </span>
                 </div>
             </div>
@@ -68,8 +68,8 @@ const Projects = () => {
 
                     {/* live links */}
                     <span className='flex justify-center text-[#9198a1] items-center mb-auto text-2xl gap-3 '>
-                        <a className='hover:hover:text-[#e469fa]' href='https://github.com/ajajm/yt-converter' target='_blank'><FaGithub /></a>
-                        <a className='hover:hover:text-[#e469fa] active:scale-85' href="https://" target="_blank"><LuSquareArrowOutUpRight /></a>
+                        <a className='hover:text-[#f0f6fc]' href='https://github.com/ajajm/yt-converter' target='_blank'><FaGithub /></a>
+                        <a className='hover:text-[#f0f6fc] active:scale-85' href="https://" target="_blank"><LuSquareArrowOutUpRight /></a>
                     </span>
                 </div>
             </div>
