@@ -45,8 +45,8 @@ const Experience = () => {
 
         return <div> 
                 <div className='flex flex-col items-start justify-center font-light text-sm w-xl gap-1 text-gray-300'>
-                    <h1 class="text-2xl md:text-3xl text-white font-bold ">{data.role}, 
-                        <span class="bg-gradient-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text font-extrabold ml-1">@{selectedWork}</span>
+                    <h1 className="text-2xl md:text-3xl text-white font-bold ">{data.role}, 
+                        <span className="bg-linear-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text font-extrabold ml-1">@{selectedWork}</span>
                     </h1>
                     <p className='text-[#9198a1]'>{data.duration}</p>
                     <p className='text-[#9198a1]'>{data.location} </p>

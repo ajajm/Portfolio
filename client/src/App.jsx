@@ -1,14 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import Home from './pages/home/Home'
+import Home from './pages/Home'
 import Navbar from './components/Navbar'
-import About from "./pages/about/About";
-import Contact from "./pages/contact/Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='bg-black h-screen text-white'>
+    <div className='h-screen text-[#fffff0]'>
         <Navbar/>
 
         <Routes>

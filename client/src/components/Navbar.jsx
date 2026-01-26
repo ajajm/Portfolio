@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Button } from "@/components/ui/button"
+import pfp from '../assets/pfp.jpg'
 
 const Navbar = () => {
   return (
@@ -9,8 +10,8 @@ const Navbar = () => {
         <Link to='/'>
           <span className='flex text-sm items-center  gap-2'>
             <img 
-              src='/pfp.jpg' 
-              alt='ajaj.dev' 
+              src={pfp} 
+              alt={pfp}
               className='w-9 h-9 object-cover rounded-full transition duration-500  blur-0 scale-100 ' 
             />
           </span>

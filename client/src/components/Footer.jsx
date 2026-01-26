@@ -11,8 +11,8 @@ const Footer = () => {
         <Link to='/'>
           <span className='flex items-center font-bold text-x gap-2'>
             <img 
-              src='/pfp.jpg' 
-              alt='ajaj.dev' 
+              src='/pfp.jpg'
+              alt='ajaj.dev'
               className='w-9 h-9 object-cover rounded-full transition duration-500 blur-0 scale-100' 
             />
             Md Ajaj
