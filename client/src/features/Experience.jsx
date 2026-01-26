@@ -61,7 +61,7 @@ const Experience = () => {
     }
     
   return (
-    <div className='max-w-5xl mx-auto px-8 mt-30 mb-40'>
+    <div className='max-w-5xl mx-auto px-8 mt-33'>
         <h1 className='text-2xl md:text-3xl font-bold py-10 '>Work Experience</h1>
 
         <div className='flex flex-row justify-center items-start md:flex-row gap-20 mt-5 w-5xl'>

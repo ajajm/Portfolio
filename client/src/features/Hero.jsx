@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
       <div className='mt-4 lg:mt-0'>
         <img 
-          alt="Avatar" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" className="transition duration-500 mb-4 blur-0 scale-100 rounded-2xl"
+          alt="Avatar" loading="lazy" width="700" height="700" decoding="async" data-nimg="1" className="transition duration-500 mb-4 blur-0 scale-100 rounded-2xl"
           src={pfp} srcSet={pfp} /> 
         <Socials /> 
       </div> 
