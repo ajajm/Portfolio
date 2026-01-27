@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import ReactLogo from '../assets/react.svg'
-import JSLogo from '../assets/js.svg'
 import NodeJSLogo from '../assets/nodejs.svg'
 import MongoDBLogo from '../assets/mongodb.svg'
 import { FaGithub } from 'react-icons/fa';
-import { FaAws } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 
 const Projects = () => {
+
 
   return (
     <>
@@ -84,7 +82,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-
         </div>
     </>
   )
