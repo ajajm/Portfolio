@@ -15,7 +15,7 @@ const Projects = () => {
         <div className='max-w-5xl mx-auto px-8 mt-25'>
                 <h1 className='text-2xl md:text-3xl font-bold py-10 '>Projects</h1>
                 {/* speechFlow card */}
-                <div className="p-[0.5px] bg-linear-to-b  from-[#393c40] via-[#393c40] to-transparent rounded-lg">
+                <div className="group p-[0.5px] bg-linear-to-b  from-[#393c40] via-[#393c40] to-transparent rounded-lg">
                     <div className="bg-linear-to-tr bg-[#1a1e26] to-[#15191f] flex justify-between p-5 rounded-lg">
                         
                         {/* holds data */}
@@ -27,8 +27,8 @@ const Projects = () => {
                                 <h2 className="text-2xl font-bold">SpeechFlow</h2>
                                 {/* live links */}
                                 <span className='flex justify-center text-[#9198a1] items-center text-2xl gap-3 '>
-                                    <a className='hover:text-[#f0f6fc]' href='https://github.com/ajajm/yt-converter' target='_blank'><FaGithub /></a>
-                                    <a className='hover:text-[#f0f6fc] active:scale-85' href="https://" target="_blank"><LuSquareArrowOutUpRight /></a>
+                                    <a className='transition duration-300 hover:text-[#f0f6fc]' href='https://github.com/ajajm/Speechflow' target='_blank'><FaGithub /></a>
+                                    <a className='transition duration-300  group-hover:text-[#e469fa] active:scale-85' href="https://speechflow.me" target="_blank"><LuSquareArrowOutUpRight /></a>
                                  </span>
                             </div>
 
@@ -52,7 +52,7 @@ const Projects = () => {
                 </div>
 
                 {/* yt-download */}
-                <div className="p-[0.5px] mt-10 bg-linear-to-b  from-[#393c40] via-[#393c40] to-transparent rounded-lg">
+                <div className="group p-[0.5px] mt-10 bg-linear-to-b  from-[#393c40] via-[#393c40] to-transparent rounded-lg">
                     <div className="bg-linear-to-tr bg-[#1a1e26] to-[#15191f] flex justify-between p-5 rounded-lg">
                         
                         {/* holds data */}
@@ -62,8 +62,8 @@ const Projects = () => {
                                 <h2 className="text-2xl font-bold">YTM Bit</h2>
                                 {/* live links */}
                                 <span className='flex justify-center text-[#9198a1] items-center text-2xl gap-3 '>
-                                    <a className='hover:text-[#f0f6fc]' href='https://github.com/ajajm/yt-converter' target='_blank'><FaGithub /></a>
-                                    <a className='hover:text-[#f0f6fc] active:scale-85' href="https://" target="_blank"><LuSquareArrowOutUpRight /></a>
+                                    <a className='transition duration-300 hover:text-[#f0f6fc]' href='https://github.com/ajajm/yt-converter' target='_blank'><FaGithub /></a>
+                                    <a className='transition duration-300  group-hover:text-[#e469fa] active:scale-85' href="https://" target="_blank"><LuSquareArrowOutUpRight /></a>
                                  </span>
                             </div>
                             <p className='text-[#9198a1] font-light text-sm '>A simple media converter</p>
