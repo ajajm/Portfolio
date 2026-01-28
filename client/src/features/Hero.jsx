@@ -10,7 +10,7 @@ const Hero = () => {
           <span className="bg-linear-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text font-extrabold"> who ships.</span>
         </h1>
           <p className='font-light text-sm md:text-base text-[#9198a1]'>
-            I’m MD Ajaj, a software engineer focused on turning ideas into working systems. I build web applications, automation pipelines, and AI-powered tools without unnecessary complexity.
+            I’m MD Ajaj, a software engineer focused on building practical, production ready systems. I work on web applications, automation pipelines, and AI powered tools without unnecessary complexity.
           </p>
           <p className='mt-5 lg:mt-22'>~ Focusing towards career ✨</p>
       </div>

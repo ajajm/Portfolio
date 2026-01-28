@@ -15,6 +15,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='mailto:ajaj.dev@proton.me' element={<Contact />} />
         </Routes>
 
         <Footer/>
