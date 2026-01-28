@@ -20,7 +20,7 @@ const About = () => {
             I am a Computer Science undergraduate working toward a career as a
             software engineer, with a strong focus on applied Generative AI and
             AI agent systems. My interests lie in building practical, scalable
-            systems aligned with real world use cases not academic only
+            systems aligned with real world use casesnot academic only
             experiments.
           </p>
 
@@ -43,20 +43,21 @@ const About = () => {
           </p>
         </div>
 
-        {/* Right Profile */}
-        <div className="w-full lg:w-[240px] flex flex-col items-start">
-          <div  className='mt-4 lg:mt-0'>
-            <img
+       {/* Right Profile */}
+      <div className="w-full lg:w-[240px] flex justify-center lg:justify-start">
+        <div className="mt-8 lg:mt-0 flex flex-col items-center lg:items-start max-w-[220px] mb-12">
+          <img
             alt="Md Ajaj"
             loading="lazy"
-            width="220"
-            height="220"
+            width="200"
+            height="200"
             className="rounded-2xl mb-4"
             src={pfp}
           />
-          <Socials />
-          </div>
+          
         </div>
+      </div>
+
       </div>
     </div>
   )
