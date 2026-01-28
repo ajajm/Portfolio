@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import Socials from './Socials';
+import pfp from '../assets/pfp.jpg'
+
+
 
 const Footer = () => {
   return (
@@ -11,8 +14,8 @@ const Footer = () => {
         <Link to='/'>
           <span className='flex items-center font-bold text-x gap-2'>
             <img 
-              src='/pfp.jpg'
-              alt='ajaj.dev'
+              src={pfp}
+              alt={pfp}
               className='w-9 h-9 object-cover rounded-full transition duration-500 blur-0 scale-100' 
             />
             Md Ajaj

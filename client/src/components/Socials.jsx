@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { SiDevpost } from "react-icons/si";
+
 
 const Socials = () => {
   return (
@@ -7,6 +9,7 @@ const Socials = () => {
         <a className='hover:text-[#f0f6fc]' href='https://x.com/not_ajaj/' target='_blank'><FaTwitter /></a>
         <a className='hover:text-[#f0f6fc]' href='https://github.com/ajajm/' target='_blank'><FaGithub /></a>
         <a className='hover:text-[#f0f6fc]' href='https://www.linkedin.com/in/ajaj-dev/' target='_blank'><FaLinkedin /></a>
+        <a className='hover:text-[#f0f6fc]' href='https://devpost.com/ajajm677' target='_blank'><SiDevpost /></a>
     </div>
   )
 }
