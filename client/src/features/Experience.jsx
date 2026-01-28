@@ -13,9 +13,9 @@ const Experience = () => {
             duration: 'Nov 2025 - Jan 2026',
             location: 'Pune, India',
             description: {
-                line1:'• Built a RESTful backend API',
-                line2:'• Implemented JWT-based authentication',
-                line3:'• Applied MVC architecture and API testing'
+                line1:'Built a RESTful backend API',
+                line2:'Implemented JWT-based authentication',
+                line3:'Applied MVC architecture and API testing'
             }
         },
         Nutan: {
@@ -23,18 +23,18 @@ const Experience = () => {
             duration: 'May 2025 - July 2025',
             location: 'Nashik, India',
             description: {
-                line1:'• Orchestrated a 6-week digital literacy program for 100+ students',
-                line2:'• Developed and deployed a functional website using the MERN stack',
-                line3:'• Streamlining information delivery through automation'
+                line1:'Orchestrated a 6-week digital literacy program for 100+ students',
+                line2:'Developed and deployed a functional website using the MERN stack',
+                line3:'Streamlining information delivery through automation'
             }
         },
         company2: {
             role: 'JPM',
             duration: 'Sep 2025 - Jan 2026',
             description: {
-                line1:'• Description line 1',
-                line2:'• Description line 2',
-                line3:'• Description line 3'
+                line1:'Description line 1',
+                line2:'Description line 2',
+                line3:'Description line 3'
             }
         }
     }
@@ -44,18 +44,25 @@ const Experience = () => {
         const data = workInfo[selectedWork]
 
         return <div> 
-                <div className='flex flex-col items-start justify-center font-light text-sm w-xl gap-1 text-gray-300'>
-                    <h1 className="text-2xl md:text-3xl text-white font-bold ">{data.role}, 
+                <div className='flex flex-col items-start justify-center font-light text-sm  gap-1 text-gray-300'>
+                    <h1 className="text-xl md:text-3xl text-white font-bold ">{data.role}, 
                         <span className="bg-linear-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text font-extrabold ml-1">@{selectedWork}</span>
                     </h1>
-                    <p className='text-[#9198a1]'>{data.duration}</p>
-                    <p className='text-[#9198a1]'>{data.location} </p>
+                    <ul className='list-outside text-[#9198a1]'>
+                        <li>{data.duration}</li>
+                        <li>{data.location}</li>                       
+                    </ul>
+                    {/* <p className='text-[#9198a1]'>{data.duration}</p>
+                    <p className='text-[#9198a1]'>{data.location} </p> */}
                 </div>
 
                 <div className='py-4 text-sm text-[#9198a1] font-normal leading-loose'>
-                    <p>{data.description.line1}</p>
-                    <p>{data.description.line2}</p>
-                    <p>{data.description.line3}</p>
+                    <ul className='list-disc pl-4 list-outside text-[#9198a1]'>
+                        <li>{data.description.line1}</li>
+                        <li>{data.description.line2}</li>
+                        <li>{data.description.line3}</li>
+                    </ul>
+
                 </div>
             </div>
     }
@@ -66,11 +73,14 @@ const Experience = () => {
     Work Experience
   </h1>
 
-  <div className="flex flex-col md:flex-row gap-8 lg:gap-16 mt-5">
+  <div className="flex flex-col md:flex-row gap-4 lg:gap-16 mt-3">
 
     {/* Buttons section */}
     <section
       className="
+        py-4 mb
+        border-[#393c40]
+        border-b-1 md:border-0
         flex flex-row md:flex-col
         gap-4
         overflow-x-auto md:overflow-x-visible
@@ -87,6 +97,7 @@ const Experience = () => {
             console.log(workInfo[selectedWork])
         }}
         className="
+        bg-[#1a1e26] font-light text-sm hover:-translate-y-1  transition ease-linear border-[0.5px] rounded-lg border-[#393c40]
           px-5 py-2 rounded-md whitespace-nowrap
         text-white
           md:w-full
@@ -102,6 +113,7 @@ const Experience = () => {
           console.log('button clicked !')
         }}
         className="
+        bg-[#1a1e26] font-light text-sm hover:-translate-y-1  transition ease-linear border-[0.5px] rounded-lg border-[#393c40]
           px-5 py-2 rounded-md whitespace-nowrap
           text-white
           md:w-full
@@ -119,6 +131,7 @@ const Experience = () => {
 
   </div>
 </div>
+
 
   )
 }
