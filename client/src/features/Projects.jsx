@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <>
         {/*  */}
-        <div className='max-w-5xl mx-auto px-8 mt-25'>
+        <div className='max-w-5xl mx-auto px-8 mt-20'>
                 <h1 className='text-2xl md:text-3xl font-bold py-10 '>Projects</h1>
                 {/* speechFlow card */}
                 <div className="group p-[0.5px] bg-linear-to-b  from-[#393c40] via-[#393c40] to-transparent rounded-lg">

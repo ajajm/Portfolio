@@ -69,7 +69,7 @@ const Experience = () => {
     
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-  <h1 className="text-2xl md:text-3xl font-bold py-8">
+  <h1 className="text-2xl md:text-3xl font-bold py-7">
     Work Experience
   </h1>
 
@@ -78,7 +78,7 @@ const Experience = () => {
     {/* Buttons section */}
     <section
       className="
-        py-4 mb
+        pb-4 mb
         border-[#393c40]
         border-b-1 md:border-0
         flex flex-row md:flex-col
