@@ -33,9 +33,8 @@ const Projects = () => {
                             </div>
 
                             <p className='text-[#9198a1] font-light text-sm '>Real time text to speech bot</p>
-                            <p className='text-[#9198a1] font-normal text-sm leading-snuh mt-4'>
-                                A minimal discord bot that converts text messages into speech and plays them in voice channels.
-                                This project focuses<br /> on clarity, predictability and correctness over feature bloat. It does one thing take text and speak it reliably.
+                            <p className='text-[#9198a1] font-normal text-sm leading-snug mt-4'>
+                                A minimal, discord bot that converts text messages into speech and plays them in voice channels, built using Google text to speech and FFmpeg, the system emphasizes reliable execution, clean and maintainable architecture while intentionally avoiding feature bloat.
                             </p>
                             <p className='text-[#9198a1] font-bold text-sm leading-snuh mt-4'>Tech Stack</p>
 
@@ -67,8 +66,8 @@ const Projects = () => {
                                  </span>
                             </div>
                             <p className='text-[#9198a1] font-light text-sm '>A simple media converter</p>
-                            <p className='text-[#9198a1] font-normal text-sm leading-snuh mt-4'>
-                                Convert and download YouTube videos as MP3 or MP4 easily. Built using yt-dlp, this tool provides  a simple yet powerful <br />backend with a minimal frontend interface.
+                            <p className='text-[#9198a1] font-normal text-sm leading-snug mt-4'>
+                                A media conversion service that enables downloading social media videos as MP4 or MP3. Built using yt-dlp and FFmpeg, the backend is designed for efficient error handling and controlled resource usage. 
                             </p>
                             <p className='text-[#9198a1] font-bold text-sm leading-snuh mt-4'>Tech Stack</p>
 
