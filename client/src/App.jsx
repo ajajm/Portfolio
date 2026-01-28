@@ -5,11 +5,21 @@ import Navbar from './components/Navbar'
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from './components/Footer';
+import { useState } from "react";
+import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
+  const [progress, setProgress] = useState(0);
+
   return (
     <div className='h-screen text-[#fffff0]'>
-        <Navbar/>
+      <LoadingBar
+        color="#e769f5"
+        progress={progress}
+        onLoaderFinished={() => setProgress()}
+      />
+        <Navbar progressData={setProgress} />
+
 
         <Routes>
             <Route path='/' element={<Home />} />
