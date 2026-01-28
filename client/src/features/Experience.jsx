@@ -48,16 +48,16 @@ const Experience = () => {
                     <h1 className="text-xl md:text-3xl text-white font-bold ">{data.role}, 
                         <span className="bg-linear-to-r from-[#e769f5]  to-[#fc79bd] inline-block text-transparent bg-clip-text font-extrabold ml-1">@{selectedWork}</span>
                     </h1>
-                    <ul className='list-outside text-[#9198a1]'>
-                        <li>{data.duration}</li>
-                        <li>{data.location}</li>                       
-                    </ul>
+
+                        <p className='text-[#9198a1]'>{data.duration}</p>
+                        <p className='text-[#9198a1]'>{data.location}</p>                       
+
                     {/* <p className='text-[#9198a1]'>{data.duration}</p>
                     <p className='text-[#9198a1]'>{data.location} </p> */}
                 </div>
 
                 <div className='py-4 text-sm text-[#9198a1] font-normal leading-loose'>
-                    <ul className='list-disc pl-4 list-outside text-[#9198a1]'>
+                    <ul className='list-disc pl-4  list-outside text-[#9198a1]'>
                         <li>{data.description.line1}</li>
                         <li>{data.description.line2}</li>
                         <li>{data.description.line3}</li>
@@ -125,7 +125,7 @@ const Experience = () => {
     </section>
 
     {/* Work description */}
-    <div className="w-full min-h-[200px]">
+    <div className="w-full h-[200px]">
       {workDescription()}
     </div>
 

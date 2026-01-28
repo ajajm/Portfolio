@@ -12,6 +12,7 @@ import vscode from '../assets/vscode.svg'
 import tailwind from '../assets/tailwind.svg'
 import docker from '../assets/docker.svg'
 import python from '../assets/python.svg'
+import aws from '../assets/aws.svg'
 
 
 
@@ -87,6 +88,9 @@ const Skills = () => {
             <button className='bg-[#1a1e26] font-light text-sm hover:-translate-y-1  transition ease-linear border-[0.5px] rounded-lg border-[#393c40] py-2 px-3'>
               <img src={docker} className='w-5 h-5 inline mr-2 ' alt="React" />
               Docker</button>
+              {/* <button className='bg-[#1a1e26] font-light text-sm hover:-translate-y-1  transition ease-linear border-[0.5px] rounded-lg border-[#393c40] py-2 px-3'>
+              <img src={aws} className='w-5 h-5 inline mr-2 ' alt="React" />
+              AWS</button> */}
           </div>
         </div>      
 
