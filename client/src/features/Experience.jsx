@@ -61,36 +61,65 @@ const Experience = () => {
     }
     
   return (
-    <div className='max-w-5xl mx-auto px-8 mt-33'>
-        <h1 className='text-2xl md:text-3xl font-bold py-10 '>Work Experience</h1>
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+  <h1 className="text-2xl md:text-3xl font-bold py-8">
+    Work Experience
+  </h1>
 
-        <div className='flex flex-row justify-center items-start md:flex-row gap-20 mt-5 w-5xl'>
-            <section className='flex justify-center max-w-auto h-1/2 flex-row md:flex-col md:gap-6 overflow-x-auto md:overflow-x-visible'> 
-                <Button value="Sibros" onClick={(e) => {
-                    setSelectedWork(e.target.value)
-                    console.log('button clicked !')
-                    console.table(workInfo)
-                    if (selectedWork === 'xyzz') 
-                    console.log(workInfo[selectedWork])
-                }
-                
-                }>Sibros</Button>
+  <div className="flex flex-col md:flex-row gap-8 lg:gap-16 mt-5">
 
-                <Button value="Nutan" onClick={(e) => {
-                    setSelectedWork(e.target.value)
-                    console.log('button clicked !')
+    {/* Buttons section */}
+    <section
+      className="
+        flex flex-row md:flex-col
+        gap-4
+        overflow-x-auto md:overflow-x-visible
+        md:min-w-45
+      "
+    >
+      <Button
+        value="Sibros"
+        onClick={(e) => {
+          setSelectedWork(e.target.value)
+          console.log('button clicked !')
+          console.table(workInfo)
+          if (selectedWork === 'xyzz')
+            console.log(workInfo[selectedWork])
+        }}
+        className="
+          px-5 py-2 rounded-md whitespace-nowrap
+        text-white
+          md:w-full
+        "
+      >
+        Sibros
+      </Button>
 
-                }}>Nutan</Button>
+      <Button
+        value="Nutan"
+        onClick={(e) => {
+          setSelectedWork(e.target.value)
+          console.log('button clicked !')
+        }}
+        className="
+          px-5 py-2 rounded-md whitespace-nowrap
+          text-white
+          md:w-full
+        "
+      >
+        Nutan
+      </Button>
 
-                {/* <Button>JPM Chase</Button>
-                <Button>Amazon</Button> */}
-            </section>
-            <div> 
-                {workDescription()}
-            </div>
-        </div>
+    </section>
 
+    {/* Work description */}
+    <div className="w-full min-h-[200px]">
+      {workDescription()}
     </div>
+
+  </div>
+</div>
+
   )
 }
 
