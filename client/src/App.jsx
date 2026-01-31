@@ -1,15 +1,20 @@
 import React from 'react'
-import { Route, Routes } from 'react-router'
+import { Route, Routes, useLocation } from 'react-router'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from './components/Footer';
-import { useRef } from 'react' 
+import { useRef, useEffect } from 'react' 
 import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
   const loadingBarRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const handleProgress = () => {
     if (loadingBarRef.current) {
@@ -40,7 +45,7 @@ const App = () => {
             <Route path='/contact' element={<Contact />} />
         </Routes>
 
-        <Footer/>
+        <Footer progressData={handleProgress}/>
     </div>
   )
 }
