@@ -6,7 +6,7 @@ import pfp from '../assets/pfp.jpg'
 const Navbar = ({ progressData }) => {
   const handleNavClick = () => {
     if (progressData) {
-      progressData(100)
+      progressData()
     }
   };
 

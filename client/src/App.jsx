@@ -5,27 +5,39 @@ import Navbar from './components/Navbar'
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from './components/Footer';
-import { useState } from "react";
+import { useRef } from 'react' 
 import LoadingBar from "react-top-loading-bar";
 
 const App = () => {
-  const [progress, setProgress] = useState(0);
+  const loadingBarRef = useRef(null);
+
+  const handleProgress = () => {
+    if (loadingBarRef.current) {
+      loadingBarRef.current.continuousStart(99.9);
+      setTimeout(() => {
+        loadingBarRef.current.complete();
+      }, 10);
+    }
+  };
 
   return (
     <div className='h-screen text-[#fffff0]'>
       <LoadingBar
+        ref={loadingBarRef}
         color="#e769f5"
-        progress={progress}
-        onLoaderFinished={() => setProgress()}
+        height={3}
+        md:height={4}
+        shadow={true}
+        loaderSpeed={500}
+        transitionTime={200}
       />
-        <Navbar progressData={setProgress} />
+        <Navbar progressData={handleProgress} />
 
 
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
-            <Route path='mailto:ajaj.dev@proton.me' element={<Contact />} />
         </Routes>
 
         <Footer/>
