@@ -12,7 +12,6 @@ import vscode from '../assets/vscode.svg'
 import tailwind from '../assets/tailwind.svg'
 import docker from '../assets/docker.svg'
 import python from '../assets/python.svg'
-import aws from '../assets/aws.svg'
 
 
 

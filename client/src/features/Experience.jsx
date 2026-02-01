@@ -40,7 +40,7 @@ const Experience = () => {
     }
 
     //display the work experience - default view
-    const workDescription =  (elem, value) => {
+    const workDescription =  () => {
         const data = workInfo[selectedWork]
 
         return <div> 
