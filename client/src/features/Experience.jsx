@@ -2,13 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// Import logos
-import oscLogo from '@/assets/open_source_connect_logo.jpg'
-import googleLogo from '@/assets/google_logo.jpg'
-import sibros from '@/assets/sibros_logo.png'
-import nutan from '@/assets/nutan_logo.jpg'
-import linkarrow from '@/assets/linkarrow.png'
-
 const Experience = () => {
     const [expandedRoles, setExpandedRoles] = useState({})
 
@@ -24,7 +17,7 @@ const Experience = () => {
     const experienceData = [
         {
           organization: 'Open Source Connect',
-          logo: oscLogo,
+          logo: '/open_source_connect_logo.jpg',
           totalDuration: '2 mos',
           hasCredential: true,
           credentialLink: '/credentials/open-source-connect',
@@ -44,7 +37,7 @@ const Experience = () => {
         },
         {
             organization: 'Google',
-            logo: googleLogo,
+            logo: '/google_logo.jpg',
             totalDuration: '6 mos',
             hasCredential: true,
             credentialLink: '/credentials/google-student-ambassador',
@@ -65,7 +58,7 @@ const Experience = () => {
         },
         {
             organization: 'Sibros',
-            logo: sibros,
+            logo: '/sibros_logo.png',
             totalDuration: '3 mos',
             hasCredential: false,
             roles: [
@@ -85,7 +78,7 @@ const Experience = () => {
         },
         {
           organization: 'Nutan',
-          logo: nutan,
+          logo: '/nutan_logo.jpg',
           totalDuration: '3 mos',
           hasCredential: false,
           roles: [
