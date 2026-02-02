@@ -137,7 +137,7 @@ const Experience = () => {
                         
                         {experience.hasCredential && (
                           <Link to={experience.credentialLink}>
-                            <button className="mt-3 px-4 py-1.5 text-sm font-semibold border border-white/60 rounded-full text-white hover:bg-white/10 hover:border-white/80 transition-all w-fit">
+                            <button className="mt-3 px-4 py-1.5 text-sm font-semibold border border-[#393c40] rounded-full text-[#f0fcf2] hover:bg-white/10 hover:border-white/80 transition-all w-fit">
                               Show credential <span>linkarrow</span>
                             </button>
                           </Link>
