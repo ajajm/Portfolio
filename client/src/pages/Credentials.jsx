@@ -68,9 +68,7 @@ const Credentials = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
-          <Link to="/#experience" className="text-[#9198a1] hover:text-white mb-4 inline-block">
-            ← Prev
-          </Link>
+
           <h1 className="text-2xl md:text-3xl font-bold text-white mt-4">
             {data.name} - Credentials
           </h1>
